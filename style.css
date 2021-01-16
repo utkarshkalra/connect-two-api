@@ -1,0 +1,78 @@
+:root{
+    --heading: 'Lobster', cursive;
+    --buttons: 'Quicksand', sans-serif;
+    --text: 'Poppins', sans-serif;
+}
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    overflow-x: hidden;
+    height:100vh;
+    background-image: url('img/sigmund-8czX4e7x9cE-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.wrap{
+    font-size:5vmin;
+    min-height:60%;
+    border:5px solid white;
+    margin: 5vmin 2vmin ;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.45);
+    align-items: flex-start;
+}
+
+.wrap>*{
+    padding:2vmin;
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap>h1{
+    font-family: var(--heading);
+    font-size:8vmin;
+    padding:5vmin 5vmin; 
+}
+
+.wrap>button{
+    align-self: center;
+    font-family: var(--buttons);
+    font-size:4vmin;
+    margin-top:2vmin;
+    padding:3vmin 6vmin;
+    max-width:80%;
+    border:2px solid white;
+    color:white;
+    background-color:black;
+    border-radius:2rem;
+    cursor:pointer;
+}
+
+.wrap>button:hover, .wrap>button:active{
+    background-color:white;
+    color:black
+}
+.randword{
+    margin-top :5vmin;
+}
+
+pre{
+
+   height:auto;
+   overflow-x: auto;
+   white-space: pre-wrap;
+   white-space: -moz-pre-wrap;
+   white-space: -pre-wrap;
+   white-space: -o-pre-wrap;
+   word-wrap: break-word;
+   font-family: var(--text);
+   font-weight:700;
+}
