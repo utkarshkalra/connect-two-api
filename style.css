@@ -76,3 +76,8 @@ pre{
    font-family: var(--text);
    font-weight:700;
 }
+
+p{
+    color:white;
+    background-color: black;
+}

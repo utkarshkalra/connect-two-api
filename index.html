@@ -12,15 +12,29 @@
 </head>
 
 <body>
+
     <div class="wrap">
         <h1> Random word <br> and its defination</h1>
         <button class="pressme">Generate a Random word </button>
         <div class="randword"></div>
         <div class="def"></div>
-
+        <footer>
+            <p>
+                This is created by connecting two APIs together.
+                first one is <a href="https://random-word-api.herokuapp.com/word?number=1" class="">Random word API</a> 
+                and another one is <a href="https://dictionaryapi.com/products/api-collegiate-dictionary">Dictionary API</a>
+                so the random word API genrates a random wordthat word is passed to dictionary API
+                and it returns the meanings of that word.
+                *sometimes there are no meaning available in dictionary API 
+                hence it shows "NOT FOUND".
+    
+            </p>
+        </footer>
         <!-- <pre class="output"></pre> -->
     </div>
+
 </body>
+
 <script src="app.js"></script>
 <script src="env.js"></script>
 
